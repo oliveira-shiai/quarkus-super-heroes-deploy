@@ -21,7 +21,8 @@ patches:
         spec:
           containers:
             - name: rest-fights
-              image: rest-fights:latest
+              #image: rest-fights:latest
+              image: quay.io/quarkus-super-heroes/rest-fights:java17-latest-3.2.Final
 
 - patch: |-
     apiVersion: v1
