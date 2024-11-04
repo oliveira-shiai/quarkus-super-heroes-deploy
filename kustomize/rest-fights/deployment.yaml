@@ -5,7 +5,8 @@ metadata:
   annotations:
     app.openshift.io/connects-to: '[{"apiVersion":"apps/v1","kind":"Deployment","name":"fights-db"},{"apiVersion":"apps/v1","kind":"Deployment","name":"rest-villains"},{"apiVersion":"apps/v1","kind":"Deployment","name":"rest-heroes"},{"apiVersion":"kafka.strimzi.io/v1beta2","kind":"Kafka","name":"fights-kafka"},{"apiVersion":"apps/v1","kind":"Deployment","name":"apicurio"},{"apiVersion":"opentelemetry.io/v1alpha1","kind":"OpenTelemetryCollector","name":"otel-collector"}]'
     app.openshift.io/vcs-ref: rhbq-3.2
-    app.openshift.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    #app.openshift.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+    app.openshift.io/vcs-url: https://github.com/oliveira-shiai/quarkus-super-heroes
     app.quarkus.io/build-timestamp: 2023-02-24 - 13:05:29 +0000
     prometheus.io/scrape: "true"
     prometheus.io/path: /q/metrics
@@ -31,7 +32,8 @@ spec:
     metadata:
       annotations:
         app.openshift.io/vcs-ref: rhbq-3.2
-        app.openshift.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+        #app.openshift.io/vcs-url: https://github.com/quarkusio/quarkus-super-heroes
+        app.openshift.io/vcs-url: https://github.com/oliveira-shiai/quarkus-super-heroes
         app.quarkus.io/build-timestamp: 2023-02-24 - 13:05:29 +0000
         prometheus.io/scrape: "true"
         prometheus.io/path: /q/metrics
