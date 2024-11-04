@@ -8,6 +8,7 @@ metadata:
     system: quarkus-super-heroes
   name: event-statistics-config
 data:
-  kafka.bootstrap.servers: PLAINTEXT://fights-kafka:9092
+  #kafka.bootstrap.servers: PLAINTEXT://fights-kafka:9092
+  kafka.bootstrap.servers: PLAINTEXT://my-kafka-kafka-bootstrap:9092
   mp.messaging.connector.smallrye-kafka.apicurio.registry.url: http://apicurio:8080/apis/registry/v2
   quarkus.otel.exporter.otlp.traces.endpoint: http://otel-collector:4317
